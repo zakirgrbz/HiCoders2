@@ -1,0 +1,68 @@
+*{
+    margin: 0px;
+    padding: 0px;
+ 
+    text-decoration: none
+    
+    
+}  
+@import "./variable.scss";
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  background-color: $primary-color;
+  .Box {
+    height: 300px;
+    width: 300px;
+    background-color: $primary-color;
+    float: left;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+  }
+  header {
+     height: 80px;
+    width: 1000px;
+    background-color: #CAC1C1;
+    ul {
+        li {
+            float: left;
+            a {display: block;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                width: 150px;
+                text-decoration: none;
+                font-size: 24px;
+                color: aliceblue;
+                &:hover {
+                    color: $headercolor
+                }
+            }
+        }
+    }  
+  }    
+  
+     .Boxes {
+     height: 800px;
+     width: 1200px;
+     margin: 20px auto;
+     background-color: $boxcolor;
+     display: block;
+     .R1 {
+        border-radius; 3%;
+     }
+     
+     }
+     
+        .Box1 {
+            @extend .Box;
+        }
+        .Box2 {
+            @extend .Box;
+        }
+        .Box3 {
+            @extend .Box;
+        } 
+    }
